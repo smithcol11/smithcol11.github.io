@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .navbarLink {
+    @apply p-3 pt-5 pb-5 hover:text-fuchsia-500 sm:p-5;
+  }
+
+  .pageView {
+    @apply container flex flex-col justify-center p-10 mx-auto;
+  }
+}
+
+.router-link-exact-active {
+  @apply text-emerald-500;
+}
