@@ -1,5 +1,11 @@
 <script setup>
 import FavGridItem from "../components/FavGridItem.vue";
+import downy1 from "../assets/images/downy1.png";
+import downy2 from "../assets/images/downy2.png";
+import downy3 from "../assets/images/downy3.png";
+import bloodborne from "../assets/images/bloodborne.png";
+import jsrfCover from "../assets/images/jsrfCover.png";
+import orca from "../assets/images/orca.png";
 </script>
 
 <template>
@@ -29,32 +35,32 @@ import FavGridItem from "../components/FavGridItem.vue";
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-5 mx-auto pt-10">
       <FavGridItem
         link="https://open.spotify.com/artist/4Y3ctZWgKkurt1T1D7RYyv"
-        img-src="../assets/images/downy1.png"
+        :img-src="downy1"
         alt-text="Image of Downy album cover, 第一作品集『無題』."
       />
       <FavGridItem
         link="https://open.spotify.com/artist/4Y3ctZWgKkurt1T1D7RYyv"
-        img-src="../assets/images/downy2.png"
+        :img-src="downy2"
         alt-text="Image of Downy album cover, 第三作品集『無題』."
       />
       <FavGridItem
         link="https://open.spotify.com/artist/4Y3ctZWgKkurt1T1D7RYyv"
-        img-src="../assets/images/downy3.png"
+        :img-src="downy3"
         alt-text="Image of a Downy album cover, 第六作品集『無題』."
       />
       <FavGridItem
         link="https://www.youtube.com/watch?v=-xwoGzZVk7w"
-        img-src="../assets/images/bloodborne.png"
+        :img-src="bloodborne"
         alt-text="Image of Bloodborne game cover"
       />
       <FavGridItem
         link="https://jetsetradio.fandom.com/wiki/Jet_Set_Radio_Future"
-        img-src="../assets/images/jsrfCover.png"
+        :img-src="jsrfCover"
         alt-text="Image of JSRF game cover."
       />
       <FavGridItem
         link="https://www.youtube.com/watch?v=fs8ZveNZQ8g"
-        img-src="../assets/images/orca.png"
+        :img-src="orca"
         alt-text="Image of an Orca jumping out of the water."
       />
     </div>
