@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as e,c as s,a as t}from"./index.3f13ab74.js";const c={},r={class:"pageView"},_=t("p",null,"work history",-1),a=[_];function n(i,d){return e(),s("div",r,a)}const p=o(c,[["render",n]]);export{p as default};
