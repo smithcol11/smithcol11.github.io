@@ -40,7 +40,7 @@ function changeMode() {
         <RouterLink class="navbarLink" to="/contact">Contact</RouterLink>
         <button
           @click="changeMode"
-          class="rounded-full float-right mr-5 p-1 bg-slate-900 w-8 h-8 hover:p-0.5 duration-200"
+          class="rounded-full float-right mr-5 p-1 bg-slate-900 w-6 h-6 sm:h-8 sm:w-8 hover:p-0.5 duration-200"
         >
           <svg
             v-if="mode == 0"

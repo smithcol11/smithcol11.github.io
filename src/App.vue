@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar.vue";
   <header>
     <Navbar intro="Colin Smith's Portfolio" />
   </header>
+  <div
+    class="fixed bg-slate-50 dark:bg-slate-700 w-full h-screen -z-10 top-0"
+  ></div>
   <RouterView />
 </template>
 
