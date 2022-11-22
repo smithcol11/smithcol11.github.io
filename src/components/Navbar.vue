@@ -6,7 +6,7 @@ const props = defineProps({
 
 <template>
   <div class="shadow-lg bg-slate-800 text-slate-50">
-    <div class="flex flex-row pt-5 pl-5">
+    <div class="flex flex-row pt-1 pl-1">
       <img
         src="../assets/images/me.jpg"
         alt="A headshot of me, Colin."
@@ -15,7 +15,7 @@ const props = defineProps({
       <h1 class="text-2xl pt-5 pl-5">{{ intro }}</h1>
     </div>
 
-    <nav class="flex flex-row h-16 pt-3">
+    <nav class="flex flex-row h-14 pt-3">
       <ul>
         <!-- <RouterLink class="navbarLink" to="/">Home</RouterLink> -->
         <RouterLink class="navbarLink" to="/">About</RouterLink>

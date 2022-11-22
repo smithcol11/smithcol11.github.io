@@ -41,16 +41,16 @@ function sendMsg(event) {
 
 <template>
   <div class="pageView">
-    <p class="text-center text-2xl">Find me here!</p>
-    <div class="grid grid-cols-2 mx-auto py-5">
-      <a href="https://github.com/smithcol11">
+    <!-- <p class="text-center text-2xl">Find me here!</p> -->
+    <div class="grid grid-cols-2 mx-auto pb-5">
+      <a href="https://github.com/smithcol11" target="_blank">
         <img :src="github" class="w-32 duration-300 hover:w-36 m-auto" />
       </a>
-      <a href="https://www.linkedin.com/in/colin-smith253/">
+      <a href="https://www.linkedin.com/in/colin-smith253/" target="_blank">
         <img :src="linkedin" class="w-32 duration-300 hover:w-36 m-auto" />
       </a>
     </div>
-    <p class="text-center text-2xl pb-5">Or, send me an email:</p>
+    <!-- <p class="text-center text-2xl pb-5">Or, send me an email:</p> -->
     <form
       class="mx-auto p-5 shadow-lg w-full max-w-lg border"
       @submit.prevent="sendMsg"

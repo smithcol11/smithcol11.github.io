@@ -32,8 +32,4 @@ const props = defineProps({
   </details>
 </template>
 
-<style scoped>
-summary::marker {
-  color: transparent;
-}
-</style>
+<style scoped></style>
