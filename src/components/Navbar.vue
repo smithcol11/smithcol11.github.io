@@ -15,12 +15,16 @@ const props = defineProps({
       <h1 class="text-2xl pt-5 pl-5">{{ intro }}</h1>
     </div>
 
-    <nav class="flex flex-row">
-      <RouterLink class="navbarLink" to="/">Home</RouterLink>
-      <RouterLink class="navbarLink" to="/about">About</RouterLink>
-      <RouterLink class="navbarLink" to="/workHistory">Work History</RouterLink>
-      <RouterLink class="navbarLink" to="/projects">Projects</RouterLink>
-      <RouterLink class="navbarLink" to="/contact">Contact</RouterLink>
+    <nav class="flex flex-row h-16 pt-3">
+      <ul>
+        <!-- <RouterLink class="navbarLink" to="/">Home</RouterLink> -->
+        <RouterLink class="navbarLink" to="/">About</RouterLink>
+        <RouterLink class="navbarLink" to="/workHistory"
+          >Work History</RouterLink
+        >
+        <RouterLink class="navbarLink" to="/projects">Projects</RouterLink>
+        <RouterLink class="navbarLink" to="/contact">Contact</RouterLink>
+      </ul>
     </nav>
   </div>
 </template>

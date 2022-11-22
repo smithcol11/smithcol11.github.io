@@ -8,6 +8,10 @@ const props = defineProps({
 
 <template>
   <a :href="link" class="hover:bg-fuchsia-500" target="_blank">
-    <img :src="imgSrc" :alt="altText" class="w-32 h-32 p-1" />
+    <img
+      :src="imgSrc"
+      :alt="altText"
+      class="w-32 h-32 hover:p-1 duration-300"
+    />
   </a>
 </template>
