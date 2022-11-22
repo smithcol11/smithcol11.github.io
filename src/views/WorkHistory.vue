@@ -35,7 +35,7 @@ const wells = {
 
 <template>
   <div class="pageView">
-    <div class="mx-auto mt-5 w-full drop-shadow-lg rounded-md max-w-4xl">
+    <div class="mx-auto w-full drop-shadow-lg rounded-md max-w-4xl">
       <WorkItem :content="dtna" />
       <WorkItem :content="onsemi" />
       <WorkItem :content="wells" />

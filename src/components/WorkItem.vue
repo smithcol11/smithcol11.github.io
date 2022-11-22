@@ -7,14 +7,14 @@ const props = defineProps({
 <template>
   <details
     open
-    class="bg-slate-700 open:bg-slate-700 hover:bg-slate-800 duration-200 border border-slate-300"
+    class="bg-slate-700 open:bg-slate-700 dark:bg-slate-800 dark:hover:bg-gray-800 hover:bg-slate-800 duration-200 border border-slate-300 dark:border-gray-800"
   >
     <summary
-      class="text-slate-50 select-none bg-inherit px-5 py-3 text-lg cursor-pointer text-center font-semibold"
+      class="text-slate-50 shadow select-none bg-inherit px-5 py-3 text-lg cursor-pointer text-center font-semibold"
     >
       {{ content.company }}
     </summary>
-    <div class="bg-slate-50 px-5 py-3 border text-md font-light">
+    <div class="px-5 py-3 text-md font-light bg-white dark:bg-slate-900">
       <p class="font-bold">
         {{ content.position }}
       </p>

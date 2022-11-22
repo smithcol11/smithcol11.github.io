@@ -8,7 +8,7 @@
   }
 
   .pageView {
-    @apply container flex flex-col justify-center p-5 mx-auto;
+    @apply h-screen flex flex-col p-3 mx-auto duration-300 dark:bg-slate-700 dark:text-slate-50;
   }
 }
 

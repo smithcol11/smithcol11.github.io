@@ -52,7 +52,7 @@ function sendMsg(event) {
     </div>
     <!-- <p class="text-center text-2xl pb-5">Or, send me an email:</p> -->
     <form
-      class="mx-auto p-5 shadow-lg w-full max-w-lg border"
+      class="mx-auto p-5 shadow-lg w-full max-w-lg border dark:border-gray-700 dark:bg-slate-900"
       @submit.prevent="sendMsg"
     >
       <div class="grid col-span-1 pt-5">
@@ -63,7 +63,7 @@ function sendMsg(event) {
           type="text"
           required
           placeholder="Type name here..."
-          class="border rounded-md border-slate-300 mt-1 p-2"
+          class="border rounded-md border-slate-300 mt-1 p-2 dark:bg-slate-900 dark:border-gray-700"
         />
       </div>
       <div class="grid col-span-1 pt-5">
@@ -74,7 +74,7 @@ function sendMsg(event) {
           type="email"
           required
           placeholder="Type email here..."
-          class="border rounded-md border-slate-300 mt-1 p-2"
+          class="border rounded-md border-slate-300 mt-1 p-2 dark:bg-slate-900 dark:border-gray-700"
         />
       </div>
       <div class="grid col-span-1 pt-5">
@@ -85,7 +85,7 @@ function sendMsg(event) {
           type="text"
           required
           placeholder="Type message here..."
-          class="border rounded-md border-slate-300 mt-1 p-2"
+          class="border rounded-md border-slate-300 mt-1 p-2 dark:bg-slate-900 dark:border-gray-700"
         />
       </div>
       <div class="flex pt-5 h-16">

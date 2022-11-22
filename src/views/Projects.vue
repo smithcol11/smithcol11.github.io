@@ -76,7 +76,7 @@ function changeCurrent(change) {
 <template>
   <div class="pageView">
     <div
-      class="w-full max-w-4xl mx-auto shadow-lg border border-slate-100 h-[500px]"
+      class="w-full max-w-4xl mx-auto shadow-lg border border-slate-100 dark:border-gray-700 dark:bg-slate-900 h-[500px]"
     >
       <button
         @click="changeCurrent(-1)"
@@ -102,7 +102,7 @@ function changeCurrent(change) {
       ></button>
       <button
         v-else
-        class="bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200"
+        class="dark:bg-slate-200 bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200"
         @click="setCurrent(0)"
       ></button>
       <button
@@ -112,7 +112,7 @@ function changeCurrent(change) {
       ></button>
       <button
         v-else
-        class="bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200 hover:ml-4"
+        class="dark:bg-slate-200 bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200 hover:ml-4"
         @click="setCurrent(1)"
       ></button>
       <button
@@ -122,7 +122,7 @@ function changeCurrent(change) {
       ></button>
       <button
         v-else
-        class="bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200 hover:ml-4"
+        class="dark:bg-slate-200 bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200 hover:ml-4"
         @click="setCurrent(2)"
       ></button>
     </div>
