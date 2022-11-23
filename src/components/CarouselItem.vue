@@ -22,7 +22,7 @@ const props = defineProps({
       <a
         :href="content.link"
         target="_blank"
-        class="text-fuchsia-500 italic hover:text-base duration-200"
+        class="dark:text-fuchsia-500 text-fuchsia-600 italic hover:text-base duration-200"
         >Link to GitHub</a
       >
     </div>

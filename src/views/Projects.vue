@@ -99,31 +99,37 @@ function changeCurrent(change) {
         v-if="current == 0"
         class="bg-emerald-500 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200"
         @click="setCurrent(0)"
+        aria-label="Navigate to project 1."
       ></button>
       <button
         v-else
         class="dark:bg-slate-200 bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200"
         @click="setCurrent(0)"
+        aria-label="Navigate to project 1."
       ></button>
       <button
         v-if="current == 1"
         class="bg-emerald-500 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200 hover:ml-4"
         @click="setCurrent(1)"
+        aria-label="Navigate to project 2."
       ></button>
       <button
         v-else
         class="dark:bg-slate-200 bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200 hover:ml-4"
         @click="setCurrent(1)"
+        aria-label="Navigate to project 2."
       ></button>
       <button
         v-if="current == 2"
         class="bg-emerald-500 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200 hover:ml-4"
         @click="setCurrent(2)"
+        aria-label="Navigate to project 3."
       ></button>
       <button
         v-else
         class="dark:bg-slate-200 bg-slate-700 rounded-full w-4 h-4 m-5 hover:w-5 hover:h-5 duration-200 hover:ml-4"
         @click="setCurrent(2)"
+        aria-label="Navigate to project 3."
       ></button>
     </div>
   </div>

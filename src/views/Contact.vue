@@ -44,10 +44,18 @@ function sendMsg(event) {
     <!-- <p class="text-center text-2xl">Find me here!</p> -->
     <div class="grid grid-cols-2 mx-auto pb-5">
       <a href="https://github.com/smithcol11" target="_blank">
-        <img :src="github" class="w-32 duration-300 hover:w-36 m-auto" />
+        <img
+          :src="github"
+          class="w-32 duration-300 hover:w-36 m-auto"
+          alt="GitHub logo, click to navigate there."
+        />
       </a>
       <a href="https://www.linkedin.com/in/colin-smith253/" target="_blank">
-        <img :src="linkedin" class="w-32 duration-300 hover:w-36 m-auto" />
+        <img
+          :src="linkedin"
+          class="w-32 duration-300 hover:w-36 m-auto"
+          alt="LinkedIn logo, click to navigate there."
+        />
       </a>
     </div>
     <!-- <p class="text-center text-2xl pb-5">Or, send me an email:</p> -->
@@ -91,13 +99,13 @@ function sendMsg(event) {
       <div class="flex pt-5 h-16">
         <button
           type="submit"
-          class="mr-1 ml-auto w-1/4 bg-emerald-500 rounded-lg hover:bg-emerald-600 duration-200 hover:text-lg"
+          class="text-slate-900 mr-1 ml-auto w-1/4 bg-emerald-500 rounded-lg hover:bg-emerald-600 duration-200 hover:text-lg"
         >
           Send
         </button>
         <button
           type="reset"
-          class="ml-1 mr-auto w-1/4 bg-fuchsia-500 rounded-lg hover:bg-fuchsia-600 duration-200 hover:text-lg"
+          class="text-slate-900 ml-1 mr-auto w-1/4 bg-fuchsia-500 rounded-lg hover:bg-fuchsia-600 duration-200 hover:text-lg"
         >
           Reset
         </button>
