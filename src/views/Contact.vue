@@ -12,7 +12,6 @@ const sec = ref(3);
 function renderTimer() {
   let timer = setInterval(() => {
     sec.value--;
-    console.log(sec);
     if (sec.value <= 0) {
       sec.value = 3;
       clearInterval(timer);
@@ -61,12 +60,14 @@ function sendMsg(event) {
     <!-- <p class="text-center text-2xl pb-5">Or, send me an email:</p> -->
     <form
       class="mx-auto p-5 shadow-lg w-full max-w-lg border dark:border-gray-700 dark:bg-slate-900"
-      @submit.prevent="sendMsg"
+      action="https://formspree.io/f/xdojvkaq"
+      method="POST"
     >
       <div class="grid col-span-1 pt-5">
         <label for="name">Your Name:</label>
         <input
           id="name"
+          name="name"
           v-model="name"
           type="text"
           required
@@ -78,6 +79,7 @@ function sendMsg(event) {
         <label for="email">Your Email:</label>
         <input
           id="email"
+          name="email"
           v-model="email"
           type="email"
           required
@@ -89,6 +91,7 @@ function sendMsg(event) {
         <label for="msg">Message:</label>
         <textarea
           id="msg"
+          name="message"
           v-model="msg"
           type="text"
           required
