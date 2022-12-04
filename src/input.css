@@ -4,11 +4,11 @@
 
 @layer components {
   .navbarLink {
-    @apply px-3 py-5 hover:text-fuchsia-500 sm:p-5 duration-300 hover:text-lg;
+    @apply px-3 py-1 sm:py-5 hover:text-violet-500 duration-300;
   }
 
   .pageView {
-    @apply flex flex-col p-3 mx-auto duration-300 dark:bg-slate-700 dark:text-slate-50;
+    @apply flex flex-col p-3 mx-auto duration-300 bg-transparent dark:text-slate-50;
   }
 }
 

@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <a :href="link" class="hover:bg-fuchsia-500" target="_blank">
+  <a :href="link" class="hover:bg-violet-500 mx-auto" target="_blank">
     <img
       :src="imgSrc"
       :alt="altText"

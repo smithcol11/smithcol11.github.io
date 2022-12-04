@@ -18,23 +18,17 @@ import orca from "../assets/images/orca.png";
         alt="A photo of me, smiling in a coffee shop."
         class="h-64 w-44 sm:h-96 sm:w-64 shadow-2xl rounded-3xl mx-auto mt-5"
       />
-      <p class="w-5/6 max-w-2xl mx-auto pt-5">
-        Hey! My name is Colin, thank you for taking the time to checkout my
-        page:)
+      <p class="w-5/6 max-w-2xl mx-auto pt-4">
+        Hey! My name is Colin Smith, thank you for taking the time to checkout
+        my page:) I am currently a senior at Portland State University, and will
+        be graduating soon!
       </p>
-      <p class="w-5/6 max-w-2xl mx-auto pt-5">
-        I suppose an about page should be insightful as to who I am. I guess I
-        am just like everyone else; I exist (maybe?), have pointless interests
-        that no one should care about, am hurling through space on this rock
-        waiting for the inevitable heat death of the universe, while constantly
-        trying to avoid nihilistic thoughts about my own pointlessness, pain in
-        the world, and those who would subvert humanity for personal gain.
-      </p>
-      <p class="w-5/6 max-w-2xl mx-auto pt-5">
-        On a more reasonable and upbeat note, I enjoy rollerblading, video
-        games, and computers, both hardware as well as software. I have very few
-        favorites in life, but I have identified some to share here. Click on
-        the images below to check them out!
+      <p class="w-5/6 max-w-2xl mx-auto pt-4">
+        I enjoy rollerblading, video games, and computers, both hardware as well
+        as software. I have very few favorites in life, but I have identified
+        some to share here. My favorite band is downy, my favorite games are
+        Bloodborne and JSRF, and my favorite animal is an Orca. Click on the
+        images below to check them out!
       </p>
       <div
         class="grid grid-cols-2 sm:grid-cols-3 gap-5 mx-auto px-10 py-5 max-w-lg"

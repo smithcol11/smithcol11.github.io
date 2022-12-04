@@ -22,13 +22,27 @@ function renderTimer() {
 
 function sendMsg(event) {
   render.value = true;
-  event.preventDefault();
   console.log(`
     Contact Sent:
     \tName:${name.value}
     \tEmail:${email.value}
     \tMessage:${msg.value}
   `);
+
+  const response = fetch(
+    `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE}`,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: name.value,
+        email: email.value,
+        message: msg.value,
+      }),
+    }
+  );
 
   name.value = "";
   email.value = "";
@@ -41,27 +55,25 @@ function sendMsg(event) {
 <template>
   <div class="pageView">
     <!-- <p class="text-center text-2xl">Find me here!</p> -->
-    <div class="grid grid-cols-2 mx-auto pb-5">
+    <div class="grid grid-cols-2 mx-auto pb-5 gap-5">
       <a href="https://github.com/smithcol11" target="_blank">
         <img
           :src="github"
-          class="w-32 duration-300 hover:w-36 m-auto"
+          class="w-32 p-1 duration-300 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-xl mx-auto"
           alt="GitHub logo, click to navigate there."
         />
       </a>
       <a href="https://www.linkedin.com/in/colin-smith253/" target="_blank">
         <img
           :src="linkedin"
-          class="w-32 duration-300 hover:w-36 m-auto"
+          class="w-32 p-1 duration-300 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-xl mx-auto"
           alt="LinkedIn logo, click to navigate there."
         />
       </a>
     </div>
-    <!-- <p class="text-center text-2xl pb-5">Or, send me an email:</p> -->
     <form
       class="mx-auto p-5 shadow-lg w-full max-w-lg border dark:border-gray-700 dark:bg-slate-900"
-      action="https://formspree.io/f/xdojvkaq"
-      method="POST"
+      @submit.prevent="sendMsg"
     >
       <div class="grid col-span-1 pt-5">
         <label for="name">Your Name:</label>
@@ -102,13 +114,13 @@ function sendMsg(event) {
       <div class="flex pt-5 h-16">
         <button
           type="submit"
-          class="text-slate-900 mr-1 ml-auto w-1/4 bg-emerald-500 rounded-lg hover:bg-emerald-600 duration-200 hover:text-lg"
+          class="text-slate-900 mr-1 ml-auto w-1/4 bg-emerald-500 rounded-lg hover:bg-emerald-600 duration-300 hover:text-lg"
         >
           Send
         </button>
         <button
           type="reset"
-          class="text-slate-900 ml-1 mr-auto w-1/4 bg-fuchsia-500 rounded-lg hover:bg-fuchsia-600 duration-200 hover:text-lg"
+          class="text-slate-900 ml-1 mr-auto w-1/4 bg-violet-500 rounded-lg hover:bg-violet-600 duration-300 hover:text-lg"
         >
           Reset
         </button>

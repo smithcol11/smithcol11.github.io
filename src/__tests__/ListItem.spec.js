@@ -1,18 +1,18 @@
 import { mount } from "@vue/test-utils";
 import { expect, test } from "vitest";
-import WorkItem from "../components/WorkItem.vue";
+import ListItem from "../components/ListItem.vue";
 
 test("Mount Work Item", async () => {
-  expect(WorkItem).toBeTruthy();
+  expect(ListItem).toBeTruthy();
 
-  const wrapper = mount(WorkItem, {
+  const wrapper = mount(ListItem, {
     props: {
       content: {
-        position: "test position",
-        company: "test company",
+        title: "test position",
+        subtitle: "test company",
         date: "test date",
         location: "test location",
-        tasks: ["test tast 1", "test task 2"],
+        details: ["test tast 1", "test task 2"],
       },
     },
   });
